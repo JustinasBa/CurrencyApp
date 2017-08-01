@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="KGk-i7-Jjw" customClass="BalanceTableViewCell" customModule="CurrencyApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kom. mokestis:   €28.21" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXU-ua-eLy">
+                        <rect key="frame" x="161" y="0.0" width="151" height="44"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€1000.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIw-x4-UtP">
+                        <rect key="frame" x="8" y="8" width="104" height="28"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="kIw-x4-UtP" secondAttribute="bottom" constant="7.5" id="1zV-gX-83S"/>
+                    <constraint firstItem="kIw-x4-UtP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="JlI-Nk-sv2"/>
+                    <constraint firstItem="wXU-ua-eLy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="RSE-3d-dAn"/>
+                    <constraint firstAttribute="bottom" secondItem="wXU-ua-eLy" secondAttribute="bottom" id="h3P-kK-UA4"/>
+                    <constraint firstItem="kIw-x4-UtP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="nUM-lW-fof"/>
+                    <constraint firstAttribute="trailing" secondItem="wXU-ua-eLy" secondAttribute="trailing" constant="8" id="q4s-dq-OgN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commisionFeeLabel" destination="wXU-ua-eLy" id="xfv-Au-cen"/>
+                <outlet property="moneyAmountLabel" destination="kIw-x4-UtP" id="boQ-t9-E6y"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="54"/>
+        </tableViewCell>
+    </objects>
+</document>
